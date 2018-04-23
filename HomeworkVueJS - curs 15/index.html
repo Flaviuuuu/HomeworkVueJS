@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div id="exercise2">
+    <div class="container">
+    <div>
+        <button v-on:click="say('hi')">Salut!</button>
+    </div>
+    <br>
+    <div>
+        <input type="text" v-on:keydown="showName">
+        <p>{{ name }}</p>
+
+    </div>
+    <input type="text" v-on:keydown.enter="showName">
+    <p>{{ name }}</p>
+    </div>
+</div>
+<script src="dist/main.js"></script>
+</body>
+</html>
