@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>curs 18 </title>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div id="app">
+            <h2>Random Color Generator</h2>
+            <br>
+    
+            <button class="btn btn-primary" id="change" @click="randomcolorGenerator">New Colors</button>
+            <br><br>
+    
+            <input class="form-control" type="text" placeholder="Search color" v-model="findColor">
+            <br><br>
+    
+            <div class="row">
+                <div v-for="color in search" class="col mb-3">
+                    <div class="box rounded" :style="{backgroundColor: color}"></div>
+                    <div>{{ color }}</div>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+    
+</div>
+     <script src="dist/main.js"></script>
+</body>
+
+</html>
